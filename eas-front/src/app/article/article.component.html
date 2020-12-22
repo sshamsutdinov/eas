@@ -1,0 +1,13 @@
+<div *ngFor="let article of articles">
+  <div class="jumbotron">
+    <h2 class="display-4">{{article.title}}</h2>
+    <p class="lead">{{article.annotation}}</p>
+    <hr class="my-4">
+    <p>{{article.author}} | {{article.authorAbout}}</p>
+    <p>Citation: {{article.citation}}</p>
+    <p>Pages: {{article.pages.pageStart}}-{{article.pages.pageEnd}}</p>
+    <p class="lead">
+      <a class="btn btn-primary btn-lg" href="{{article.pdfMeta}}" target="_blank" role="button">PDF</a>
+    </p>
+  </div>
+</div>

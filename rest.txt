@@ -1,0 +1,91 @@
+Rest Api
+ISSUES:
+ api:
+GET 	/eas/issue
+POST 	/eas/issue
+DELETE  /eas/issue/{id}
+  /eas/issue/search/ - do in front
+ create body:
+  {
+   number,
+   doi,
+   publishingDate,
+   pdfMeta,
+   coverMeta,
+   articles: [
+    {
+     title,
+     author,
+     authorAbout,
+     citation,
+     annotation,
+     rubric,
+     keywords: [],
+     pages,
+     pdfMeta
+    }
+   ]
+  }
+ search body:
+  {
+   author?,
+   title?,
+   rubric?,
+   keywords?,
+   publishingDate?,
+   number?
+  }
+
+ UI Content:
+ constraits:
+  id контета заданы со старта
+  нельзя создать новый id контента
+  нельзя удалять контент
+ api:
+GET  /eas/content
+POST  /eas/content
+
+ body:
+  {
+   id,
+   content
+  }
+
+ content names:
+  Submit:
+   Author Guidelines
+   Submission Side
+   OPen Access Policy
+  Purchase
+  About:
+   About The Journal
+   Editorial Board
+   Terms and Conditions
+  Fees
+  Footer
+   ISSN
+   Copyright
+   registration date
+   licens_num
+
+
+  FILE STORAGE:
+  GET /eas/file/{id}
+  PUT /eas/file
+    mulipart-file
+
+
+Вопросы:
+1) Дата выпуска в каком виде 30.12.2020
+2) Нужны ли отедльные сущности авторов да
+4) Партнеры динамические? нет
+5) Что Делать с РИНЦ  СКОПУС и т.д. список в шапке
+6) Новости
+
+Все в markdown
+
+Задачи:
+1) Подключить монгу +
+2) Написать ресты для issues, news, content +
+3) Написать файловое хранилище работаем через FilePart
+

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - UIContentRestTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>UIContentRestTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/ru.eas.repository.rest.html">ru.eas.repository.rest</a> &gt; UIContentRestTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">5</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.136s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">when content is saved correctly then ok()</td>
+<td class="success">0.011s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">when during saving repo throws exception then fail()</td>
+<td class="success">0.107s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">when repository returns content then ok()</td>
+<td class="success">0.006s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">when repository returns empty list then ok()</td>
+<td class="success">0.006s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">when repository throw exception then status fail()</td>
+<td class="success">0.006s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2020-12-20 19:04:06.599  INFO 11681 --- [    Test worker] o.s.t.c.s.AbstractContextLoader          : Could not detect default resource locations for test class [ru.eas.repository.rest.UIContentRestTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-12-20 19:04:06.603  INFO 11681 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2020-12-20 19:04:06.604  INFO 11681 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@509be293, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@269d33da, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@136fa4c2, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@787d01a0, org.springframework.test.context.support.DirtiesContextTestExecutionListener@777dfb46, org.springframework.test.context.transaction.TransactionalTestExecutionListener@38310590, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5696efe0, org.springframework.test.context.event.EventPublishingTestExecutionListener@46769493, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5ec9e0d0, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@6ee4631c, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@fec78cf, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@7d4ca7ad, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@6c1207b4, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@212365a9]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.3.4.RELEASE)
+
+2020-12-20 19:04:06.622  INFO 11681 --- [    Test worker] r.e.r.r.UIContentRestTest                : Starting UIContentRestTest on salsh with PID 11681 (started by salsh in /home/salsh/IdeaProjects/eas/eas-server)
+2020-12-20 19:04:06.624  INFO 11681 --- [    Test worker] r.e.r.r.UIContentRestTest                : No active profile set, falling back to default profiles: default
+2020-12-20 19:04:06.866  INFO 11681 --- [    Test worker] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-20 19:04:06.928  INFO 11681 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2020-12-20 19:04:06.928  INFO 11681 --- [    Test worker] o.s.t.w.s.TestDispatcherServlet          : Initializing Servlet ''
+2020-12-20 19:04:06.932  INFO 11681 --- [    Test worker] o.s.t.w.s.TestDispatcherServlet          : Completed initialization in 4 ms
+2020-12-20 19:04:06.940  INFO 11681 --- [    Test worker] r.e.r.r.UIContentRestTest                : Started UIContentRestTest in 0.334 seconds (JVM running for 4.104)
+2020-12-20 19:04:07.044 ERROR 11681 --- [    Test worker] r.e.r.GlobalExceptionHandler             : java.lang.Exception: test
+2020-12-20 19:04:07.057  INFO 11681 --- [    Test worker] r.e.r.UIContentRest                      : Ui content updated UIContent(id=about_Terms_and_conditions, content=test)
+2020-12-20 19:04:07.073 ERROR 11681 --- [    Test worker] r.e.r.GlobalExceptionHandler             : java.lang.Exception: test
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 6.3</a> at Dec 20, 2020, 7:04:07 PM</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.eas.repository.rest.UIContentRestTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2020-12-20T16:04:06" hostname="salsh" time="0.14">
+  <properties/>
+  <testcase name="when during saving repo throws exception then fail()" classname="ru.eas.repository.rest.UIContentRestTest" time="0.107"/>
+  <testcase name="when content is saved correctly then ok()" classname="ru.eas.repository.rest.UIContentRestTest" time="0.011"/>
+  <testcase name="when repository returns empty list then ok()" classname="ru.eas.repository.rest.UIContentRestTest" time="0.006"/>
+  <testcase name="when repository throw exception then status fail()" classname="ru.eas.repository.rest.UIContentRestTest" time="0.006"/>
+  <testcase name="when repository returns content then ok()" classname="ru.eas.repository.rest.UIContentRestTest" time="0.006"/>
+  <system-out><![CDATA[2020-12-20 19:04:06.599  INFO 11681 --- [    Test worker] o.s.t.c.s.AbstractContextLoader          : Could not detect default resource locations for test class [ru.eas.repository.rest.UIContentRestTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-12-20 19:04:06.603  INFO 11681 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2020-12-20 19:04:06.604  INFO 11681 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@509be293, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@269d33da, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@136fa4c2, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@787d01a0, org.springframework.test.context.support.DirtiesContextTestExecutionListener@777dfb46, org.springframework.test.context.transaction.TransactionalTestExecutionListener@38310590, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5696efe0, org.springframework.test.context.event.EventPublishingTestExecutionListener@46769493, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5ec9e0d0, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@6ee4631c, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@fec78cf, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@7d4ca7ad, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@6c1207b4, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@212365a9]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.3.4.RELEASE)
+
+2020-12-20 19:04:06.622  INFO 11681 --- [    Test worker] r.e.r.r.UIContentRestTest                : Starting UIContentRestTest on salsh with PID 11681 (started by salsh in /home/salsh/IdeaProjects/eas/eas-server)
+2020-12-20 19:04:06.624  INFO 11681 --- [    Test worker] r.e.r.r.UIContentRestTest                : No active profile set, falling back to default profiles: default
+2020-12-20 19:04:06.866  INFO 11681 --- [    Test worker] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-20 19:04:06.928  INFO 11681 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2020-12-20 19:04:06.928  INFO 11681 --- [    Test worker] o.s.t.w.s.TestDispatcherServlet          : Initializing Servlet ''
+2020-12-20 19:04:06.932  INFO 11681 --- [    Test worker] o.s.t.w.s.TestDispatcherServlet          : Completed initialization in 4 ms
+2020-12-20 19:04:06.940  INFO 11681 --- [    Test worker] r.e.r.r.UIContentRestTest                : Started UIContentRestTest in 0.334 seconds (JVM running for 4.104)
+2020-12-20 19:04:07.044 ERROR 11681 --- [    Test worker] r.e.r.GlobalExceptionHandler             : java.lang.Exception: test
+2020-12-20 19:04:07.057  INFO 11681 --- [    Test worker] r.e.r.UIContentRest                      : Ui content updated UIContent(id=about_Terms_and_conditions, content=test)
+2020-12-20 19:04:07.073 ERROR 11681 --- [    Test worker] r.e.r.GlobalExceptionHandler             : java.lang.Exception: test
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

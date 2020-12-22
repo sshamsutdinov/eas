@@ -1,0 +1,9 @@
+.idea/
+*.iml
+target/
+.gradle/
+out/
+.vagrant/
+docs/
+.sbt/
+sbt-runtime/

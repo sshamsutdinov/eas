@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+
+  mongo:
+    image: mongo
+    hostname: mongo
+    ports:
+      - 27017:27017
+
+  eas-server:
+    build:
+      context: ./eas-server
+    hostname: eas-server
+    ports:
+      - 20000:20000
+    command:
+      - java
+      - -jar
+      - -Dserver.port=20000
+      - -Dmongo-url=mongodb://mongo:27017
+      - -Dmongo-db-name=admin
+      - -Dspring.servlet.multipart.max-file-size=1GB
+      - -Dspring.servlet.multipart.max-request-size=1GB
+      - eas-server.jar
+
