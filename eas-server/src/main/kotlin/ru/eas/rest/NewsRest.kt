@@ -1,6 +1,7 @@
 package ru.eas.rest
 
 import org.apache.logging.log4j.kotlin.Logging
+import org.springframework.security.access.prepost.PreAuthorize
 import org.springframework.web.bind.annotation.*
 import ru.eas.domain.News
 import ru.eas.repository.NewsRepository

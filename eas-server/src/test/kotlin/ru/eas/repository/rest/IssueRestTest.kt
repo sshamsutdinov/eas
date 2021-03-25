@@ -8,6 +8,10 @@ import io.mockk.mockk
 import org.hamcrest.core.Is.`is`
 import org.junit.jupiter.api.Test
 import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration
+import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration
+import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc
+import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureWebMvc
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
@@ -30,7 +34,7 @@ import java.time.format.DateTimeFormatter
 private const val apiUrl = "/eas/issue"
 
 @ContextConfiguration(classes = [IssueRestTest.TestConfiguration::class])
-@WebMvcTest
+@WebMvcTest(excludeAutoConfiguration = [SecurityAutoConfiguration::class])
 class IssueRestTest {
 
     @Autowired

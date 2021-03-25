@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.136s</div>
+<div class="counter">0.123s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,12 +79,12 @@
 </thead>
 <tr>
 <td class="success">when content is saved correctly then ok()</td>
-<td class="success">0.011s</td>
+<td class="success">0.009s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">when during saving repo throws exception then fail()</td>
-<td class="success">0.107s</td>
+<td class="success">0.097s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -99,7 +99,7 @@
 </tr>
 <tr>
 <td class="success">when repository throw exception then status fail()</td>
-<td class="success">0.006s</td>
+<td class="success">0.005s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -107,9 +107,9 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>2020-12-20 19:04:06.599  INFO 11681 --- [    Test worker] o.s.t.c.s.AbstractContextLoader          : Could not detect default resource locations for test class [ru.eas.repository.rest.UIContentRestTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-2020-12-20 19:04:06.603  INFO 11681 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
-2020-12-20 19:04:06.604  INFO 11681 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@509be293, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@269d33da, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@136fa4c2, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@787d01a0, org.springframework.test.context.support.DirtiesContextTestExecutionListener@777dfb46, org.springframework.test.context.transaction.TransactionalTestExecutionListener@38310590, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5696efe0, org.springframework.test.context.event.EventPublishingTestExecutionListener@46769493, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5ec9e0d0, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@6ee4631c, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@fec78cf, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@7d4ca7ad, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@6c1207b4, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@212365a9]
+<pre>2021-03-25 23:02:50.155  INFO 36478 --- [    Test worker] o.s.t.c.s.AbstractContextLoader          : Could not detect default resource locations for test class [ru.eas.repository.rest.UIContentRestTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-03-25 23:02:50.160  INFO 36478 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-03-25 23:02:50.161  INFO 36478 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6935ff91, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2a7a14a5, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@16f871f4, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@6278c3e9, org.springframework.test.context.support.DirtiesContextTestExecutionListener@24777140, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5ed28657, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@b703ba8, org.springframework.test.context.event.EventPublishingTestExecutionListener@2fb3d6a4, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@30514f63, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@7afb8700, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@70dc4e8c, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@41ebb0c5, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@7bfbc5cc, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@5d1e8e34]
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -119,16 +119,16 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v2.3.4.RELEASE)
 
-2020-12-20 19:04:06.622  INFO 11681 --- [    Test worker] r.e.r.r.UIContentRestTest                : Starting UIContentRestTest on salsh with PID 11681 (started by salsh in /home/salsh/IdeaProjects/eas/eas-server)
-2020-12-20 19:04:06.624  INFO 11681 --- [    Test worker] r.e.r.r.UIContentRestTest                : No active profile set, falling back to default profiles: default
-2020-12-20 19:04:06.866  INFO 11681 --- [    Test worker] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
-2020-12-20 19:04:06.928  INFO 11681 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2020-12-20 19:04:06.928  INFO 11681 --- [    Test worker] o.s.t.w.s.TestDispatcherServlet          : Initializing Servlet ''
-2020-12-20 19:04:06.932  INFO 11681 --- [    Test worker] o.s.t.w.s.TestDispatcherServlet          : Completed initialization in 4 ms
-2020-12-20 19:04:06.940  INFO 11681 --- [    Test worker] r.e.r.r.UIContentRestTest                : Started UIContentRestTest in 0.334 seconds (JVM running for 4.104)
-2020-12-20 19:04:07.044 ERROR 11681 --- [    Test worker] r.e.r.GlobalExceptionHandler             : java.lang.Exception: test
-2020-12-20 19:04:07.057  INFO 11681 --- [    Test worker] r.e.r.UIContentRest                      : Ui content updated UIContent(id=about_Terms_and_conditions, content=test)
-2020-12-20 19:04:07.073 ERROR 11681 --- [    Test worker] r.e.r.GlobalExceptionHandler             : java.lang.Exception: test
+2021-03-25 23:02:50.200  INFO 36478 --- [    Test worker] r.e.r.r.UIContentRestTest                : Starting UIContentRestTest on salsh with PID 36478 (started by salsh in /home/salsh/IdeaProjects/eas/eas-server)
+2021-03-25 23:02:50.203  INFO 36478 --- [    Test worker] r.e.r.r.UIContentRestTest                : No active profile set, falling back to default profiles: default
+2021-03-25 23:02:50.557  INFO 36478 --- [    Test worker] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-25 23:02:50.669  INFO 36478 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-03-25 23:02:50.669  INFO 36478 --- [    Test worker] o.s.t.w.s.TestDispatcherServlet          : Initializing Servlet ''
+2021-03-25 23:02:50.674  INFO 36478 --- [    Test worker] o.s.t.w.s.TestDispatcherServlet          : Completed initialization in 5 ms
+2021-03-25 23:02:50.685  INFO 36478 --- [    Test worker] r.e.r.r.UIContentRestTest                : Started UIContentRestTest in 0.521 seconds (JVM running for 4.755)
+2021-03-25 23:02:50.780 ERROR 36478 --- [    Test worker] r.e.r.GlobalExceptionHandler             : java.lang.Exception: test
+2021-03-25 23:02:50.791  INFO 36478 --- [    Test worker] r.e.r.UIContentRest                      : Ui content updated UIContent(id=about_Terms_and_conditions, content=test)
+2021-03-25 23:02:50.805 ERROR 36478 --- [    Test worker] r.e.r.GlobalExceptionHandler             : java.lang.Exception: test
 </pre>
 </span>
 </div>
@@ -140,7 +140,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 6.3</a> at Dec 20, 2020, 7:04:07 PM</p>
+<a href="http://www.gradle.org">Gradle 6.3</a> at Mar 25, 2021, 11:02:51 PM</p>
 </div>
 </div>
 </body>

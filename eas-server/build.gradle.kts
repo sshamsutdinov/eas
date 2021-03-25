@@ -23,8 +23,15 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-data-mongodb:2.3.4.RELEASE") {
         exclude("org.springframework.boot", "spring-boot-starter-logging")
     }
+    implementation("org.springframework.boot:spring-boot-starter-security:2.3.4.RELEASE") {
+        exclude("org.springframework.boot", "spring-boot-starter-logging")
+    }
 
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.9.8")
+    implementation("io.jsonwebtoken:jjwt:0.9.1")
+
+    implementation("jakarta.xml.bind:jakarta.xml.bind-api:2.3.2")
+    implementation("org.glassfish.jaxb:jaxb-runtime:2.3.2")
 
     //test
     testImplementation("io.mockk:mockk:1.9.3")

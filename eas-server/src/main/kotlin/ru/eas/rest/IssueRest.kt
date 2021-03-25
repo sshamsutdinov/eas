@@ -1,6 +1,7 @@
 package ru.eas.rest
 
 import org.apache.logging.log4j.kotlin.Logging
+import org.springframework.security.access.prepost.PreAuthorize
 import org.springframework.web.bind.annotation.*
 import ru.eas.domain.Issue
 import ru.eas.repository.IssueRepository
@@ -8,14 +9,14 @@ import ru.eas.repository.IssueRepository
 @RestController
 @CrossOrigin
 @RequestMapping("${Api.GENERAL}/issue")
-class IssueRest(
+open class IssueRest(
     private val issueRepository: IssueRepository
 ) {
 
     companion object : Logging
 
     @GetMapping
-    fun get(): Response {
+    open fun get(): Response {
         val issues = issueRepository.findAll()
         return Response.Success(issues)
     }

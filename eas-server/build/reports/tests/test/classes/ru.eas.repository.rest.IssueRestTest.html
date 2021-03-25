@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.989s</div>
+<div class="counter">1.274s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,32 +79,32 @@
 </thead>
 <tr>
 <td class="success">when during saving repo throws exception then fail()</td>
-<td class="success">0.046s</td>
+<td class="success">0.063s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">when issue is deleted then ok()</td>
-<td class="success">0.013s</td>
+<td class="success">0.018s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">when issue is saved correctly then ok()</td>
-<td class="success">0.600s</td>
+<td class="success">0.785s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">when repository returns empty list then ok()</td>
-<td class="success">0.126s</td>
+<td class="success">0.160s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">when repository returns issues then ok()</td>
-<td class="success">0.196s</td>
+<td class="success">0.241s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">when repository throw exception then status fail()</td>
-<td class="success">0.008s</td>
+<td class="success">0.007s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -121,17 +121,17 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v2.3.4.RELEASE)
 
-2020-12-20 19:04:03.946  INFO 11681 --- [    Test worker] r.e.r.r.IssueRestTest                    : Starting IssueRestTest on salsh with PID 11681 (started by salsh in /home/salsh/IdeaProjects/eas/eas-server)
-2020-12-20 19:04:03.960  INFO 11681 --- [    Test worker] r.e.r.r.IssueRestTest                    : No active profile set, falling back to default profiles: default
-2020-12-20 19:04:05.411  INFO 11681 --- [    Test worker] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
-2020-12-20 19:04:05.565  INFO 11681 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2020-12-20 19:04:05.565  INFO 11681 --- [    Test worker] o.s.t.w.s.TestDispatcherServlet          : Initializing Servlet ''
-2020-12-20 19:04:05.572  INFO 11681 --- [    Test worker] o.s.t.w.s.TestDispatcherServlet          : Completed initialization in 7 ms
-2020-12-20 19:04:05.590  INFO 11681 --- [    Test worker] r.e.r.r.IssueRestTest                    : Started IssueRestTest in 1.883 seconds (JVM running for 2.754)
-2020-12-20 19:04:06.135  INFO 11681 --- [    Test worker] r.e.r.IssueRest                          : Issue updated Issue(number=issue_number_test, doi=test, publishingDate=2020-12-20, pdfMeta=test, coverMeta=test, articles=[Article(title=article_title_test, author=article_author_test, authorAbout=article_author_about_test, citation=article_citation_test, annotation=article_annotation_test, rubric=article_rubric_test, keywords=[test_keyword_1, test_keyword_2], pages=ArticlePages(pageStart=5, pageEnd=12), pdfMeta=article_pdf_test)])
-2020-12-20 19:04:06.209 ERROR 11681 --- [    Test worker] r.e.r.GlobalExceptionHandler             : java.lang.Exception: test
-2020-12-20 19:04:06.576 ERROR 11681 --- [    Test worker] r.e.r.GlobalExceptionHandler             : java.lang.Exception: test
-2020-12-20 19:04:06.592  INFO 11681 --- [    Test worker] r.e.r.IssueRest                          : Issue deleted by id test
+2021-03-25 23:02:47.032  INFO 36478 --- [    Test worker] r.e.r.r.IssueRestTest                    : Starting IssueRestTest on salsh with PID 36478 (started by salsh in /home/salsh/IdeaProjects/eas/eas-server)
+2021-03-25 23:02:47.038  INFO 36478 --- [    Test worker] r.e.r.r.IssueRestTest                    : No active profile set, falling back to default profiles: default
+2021-03-25 23:02:48.602  INFO 36478 --- [    Test worker] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-25 23:02:48.825  INFO 36478 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-03-25 23:02:48.825  INFO 36478 --- [    Test worker] o.s.t.w.s.TestDispatcherServlet          : Initializing Servlet ''
+2021-03-25 23:02:48.836  INFO 36478 --- [    Test worker] o.s.t.w.s.TestDispatcherServlet          : Completed initialization in 11 ms
+2021-03-25 23:02:48.860  INFO 36478 --- [    Test worker] r.e.r.r.IssueRestTest                    : Started IssueRestTest in 2.05 seconds (JVM running for 2.93)
+2021-03-25 23:02:49.581  INFO 36478 --- [    Test worker] r.e.r.IssueRest                          : Issue updated Issue(number=issue_number_test, doi=test, publishingDate=2021-03-25, pdfMeta=test, coverMeta=test, articles=[Article(title=article_title_test, author=article_author_test, authorAbout=article_author_about_test, citation=article_citation_test, annotation=article_annotation_test, rubric=article_rubric_test, keywords=[test_keyword_1, test_keyword_2], pages=ArticlePages(pageStart=5, pageEnd=12), pdfMeta=article_pdf_test)])
+2021-03-25 23:02:49.667 ERROR 36478 --- [    Test worker] r.e.r.GlobalExceptionHandler             : java.lang.Exception: test
+2021-03-25 23:02:50.125 ERROR 36478 --- [    Test worker] r.e.r.GlobalExceptionHandler             : java.lang.Exception: test
+2021-03-25 23:02:50.144  INFO 36478 --- [    Test worker] r.e.r.IssueRest                          : Issue deleted by id test
 </pre>
 </span>
 </div>
@@ -143,7 +143,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 6.3</a> at Dec 20, 2020, 7:04:07 PM</p>
+<a href="http://www.gradle.org">Gradle 6.3</a> at Mar 25, 2021, 11:02:51 PM</p>
 </div>
 </div>
 </body>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ru.eas.repository.rest.IssueRestTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2020-12-20T16:04:05" hostname="salsh" time="0.997">
+<testsuite name="ru.eas.repository.rest.IssueRestTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2021-03-25T20:02:48" hostname="salsh" time="1.278">
   <properties/>
-  <testcase name="when issue is saved correctly then ok()" classname="ru.eas.repository.rest.IssueRestTest" time="0.6"/>
-  <testcase name="when during saving repo throws exception then fail()" classname="ru.eas.repository.rest.IssueRestTest" time="0.046"/>
-  <testcase name="when repository returns issues then ok()" classname="ru.eas.repository.rest.IssueRestTest" time="0.196"/>
-  <testcase name="when repository returns empty list then ok()" classname="ru.eas.repository.rest.IssueRestTest" time="0.126"/>
-  <testcase name="when repository throw exception then status fail()" classname="ru.eas.repository.rest.IssueRestTest" time="0.008"/>
-  <testcase name="when issue is deleted then ok()" classname="ru.eas.repository.rest.IssueRestTest" time="0.013"/>
+  <testcase name="when issue is saved correctly then ok()" classname="ru.eas.repository.rest.IssueRestTest" time="0.785"/>
+  <testcase name="when during saving repo throws exception then fail()" classname="ru.eas.repository.rest.IssueRestTest" time="0.063"/>
+  <testcase name="when repository returns issues then ok()" classname="ru.eas.repository.rest.IssueRestTest" time="0.241"/>
+  <testcase name="when repository returns empty list then ok()" classname="ru.eas.repository.rest.IssueRestTest" time="0.16"/>
+  <testcase name="when repository throw exception then status fail()" classname="ru.eas.repository.rest.IssueRestTest" time="0.007"/>
+  <testcase name="when issue is deleted then ok()" classname="ru.eas.repository.rest.IssueRestTest" time="0.018"/>
   <system-out><![CDATA[
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -16,17 +16,17 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v2.3.4.RELEASE)
 
-2020-12-20 19:04:03.946  INFO 11681 --- [    Test worker] r.e.r.r.IssueRestTest                    : Starting IssueRestTest on salsh with PID 11681 (started by salsh in /home/salsh/IdeaProjects/eas/eas-server)
-2020-12-20 19:04:03.960  INFO 11681 --- [    Test worker] r.e.r.r.IssueRestTest                    : No active profile set, falling back to default profiles: default
-2020-12-20 19:04:05.411  INFO 11681 --- [    Test worker] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
-2020-12-20 19:04:05.565  INFO 11681 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2020-12-20 19:04:05.565  INFO 11681 --- [    Test worker] o.s.t.w.s.TestDispatcherServlet          : Initializing Servlet ''
-2020-12-20 19:04:05.572  INFO 11681 --- [    Test worker] o.s.t.w.s.TestDispatcherServlet          : Completed initialization in 7 ms
-2020-12-20 19:04:05.590  INFO 11681 --- [    Test worker] r.e.r.r.IssueRestTest                    : Started IssueRestTest in 1.883 seconds (JVM running for 2.754)
-2020-12-20 19:04:06.135  INFO 11681 --- [    Test worker] r.e.r.IssueRest                          : Issue updated Issue(number=issue_number_test, doi=test, publishingDate=2020-12-20, pdfMeta=test, coverMeta=test, articles=[Article(title=article_title_test, author=article_author_test, authorAbout=article_author_about_test, citation=article_citation_test, annotation=article_annotation_test, rubric=article_rubric_test, keywords=[test_keyword_1, test_keyword_2], pages=ArticlePages(pageStart=5, pageEnd=12), pdfMeta=article_pdf_test)])
-2020-12-20 19:04:06.209 ERROR 11681 --- [    Test worker] r.e.r.GlobalExceptionHandler             : java.lang.Exception: test
-2020-12-20 19:04:06.576 ERROR 11681 --- [    Test worker] r.e.r.GlobalExceptionHandler             : java.lang.Exception: test
-2020-12-20 19:04:06.592  INFO 11681 --- [    Test worker] r.e.r.IssueRest                          : Issue deleted by id test
+2021-03-25 23:02:47.032  INFO 36478 --- [    Test worker] r.e.r.r.IssueRestTest                    : Starting IssueRestTest on salsh with PID 36478 (started by salsh in /home/salsh/IdeaProjects/eas/eas-server)
+2021-03-25 23:02:47.038  INFO 36478 --- [    Test worker] r.e.r.r.IssueRestTest                    : No active profile set, falling back to default profiles: default
+2021-03-25 23:02:48.602  INFO 36478 --- [    Test worker] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-25 23:02:48.825  INFO 36478 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-03-25 23:02:48.825  INFO 36478 --- [    Test worker] o.s.t.w.s.TestDispatcherServlet          : Initializing Servlet ''
+2021-03-25 23:02:48.836  INFO 36478 --- [    Test worker] o.s.t.w.s.TestDispatcherServlet          : Completed initialization in 11 ms
+2021-03-25 23:02:48.860  INFO 36478 --- [    Test worker] r.e.r.r.IssueRestTest                    : Started IssueRestTest in 2.05 seconds (JVM running for 2.93)
+2021-03-25 23:02:49.581  INFO 36478 --- [    Test worker] r.e.r.IssueRest                          : Issue updated Issue(number=issue_number_test, doi=test, publishingDate=2021-03-25, pdfMeta=test, coverMeta=test, articles=[Article(title=article_title_test, author=article_author_test, authorAbout=article_author_about_test, citation=article_citation_test, annotation=article_annotation_test, rubric=article_rubric_test, keywords=[test_keyword_1, test_keyword_2], pages=ArticlePages(pageStart=5, pageEnd=12), pdfMeta=article_pdf_test)])
+2021-03-25 23:02:49.667 ERROR 36478 --- [    Test worker] r.e.r.GlobalExceptionHandler             : java.lang.Exception: test
+2021-03-25 23:02:50.125 ERROR 36478 --- [    Test worker] r.e.r.GlobalExceptionHandler             : java.lang.Exception: test
+2021-03-25 23:02:50.144  INFO 36478 --- [    Test worker] r.e.r.IssueRest                          : Issue deleted by id test
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
