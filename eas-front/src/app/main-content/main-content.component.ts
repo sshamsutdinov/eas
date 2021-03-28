@@ -9,8 +9,6 @@ import {ActivatedRoute} from "@angular/router";
 })
 export class MainContentComponent implements OnInit {
 
-  currentContent = ''
-
   constructor(
     public contentService: ContentService,
     private route: ActivatedRoute
@@ -18,8 +16,11 @@ export class MainContentComponent implements OnInit {
   }
 
   ngOnInit(): void {
+  }
+
+  getContent(): string {
     // @ts-ignore
     const id = +this.route.snapshot.paramMap.get('id')
-    this.currentContent = this.contentService.getContentById(id)
+    return this.contentService.getContentById(id)
   }
 }

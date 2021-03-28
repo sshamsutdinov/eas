@@ -75,6 +75,28 @@ POST  /eas/content
     mulipart-file
 
 
+  security:
+  POST  /eas/auth/signup
+  request:
+    username: "",
+    password: "",
+    role: "ADMIN"
+
+  POST /eas/auth/signin
+  request:
+    username: "",
+    password: ""
+  response:
+    status: "success",
+    data: {
+       token: ""
+    }
+
+  Для post, put, delete запросов необходимо добавить header
+  Authorization: "token"
+
+
+
 Вопросы:
 1) Дата выпуска в каком виде 30.12.2020
 2) Нужны ли отедльные сущности авторов да

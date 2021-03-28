@@ -9,14 +9,14 @@ import ru.eas.repository.IssueRepository
 @RestController
 @CrossOrigin
 @RequestMapping("${Api.GENERAL}/issue")
-open class IssueRest(
+class IssueRest(
     private val issueRepository: IssueRepository
 ) {
 
     companion object : Logging
 
     @GetMapping
-    open fun get(): Response {
+    fun get(): Response {
         val issues = issueRepository.findAll()
         return Response.Success(issues)
     }

@@ -132,5 +132,8 @@
       }
     }
   },
-  "defaultProject": "eas-front"
+  "defaultProject": "eas-front",
+  "cli": {
+    "analytics": "39bc4275-295c-4a4c-82fb-231479bdb2b3"
+  }
 }

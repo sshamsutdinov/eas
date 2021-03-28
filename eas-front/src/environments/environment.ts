@@ -7,7 +7,8 @@ const api = 'http://localhost:20000/eas'
 export const environment = {
   production: false,
   issueUrl: `${api}/issue`,
-  contentUrl: `${api}/content`
+  contentUrl: `${api}/content`,
+  signInUrl: `${api}/auth/signin`
 };
 
 /*
